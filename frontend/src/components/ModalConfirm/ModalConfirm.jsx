@@ -379,40 +379,6 @@ const handlePartnerNameChange = ( index, value ) => {
                   </span>
                </label>
 
-               {/* Assist church section ---------------------- */}
-               <label>
-                  <input className="peer/showLabel absolute scale-0 unselectable" type="checkbox" name='assist_church' />
-                  <div className="section-line"></div>
-                  <span className="block bg-white max-h-14 overflow-hidden rounded-b-lg  px-4 py-0  shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-52">
-                     <div className="section-header">
-                        <h3>
-                           Iglesia
-                           <span className='section-required'>*</span>
-                        </h3>
-                        <KeyboardArrowDownIcon className={ `text-gray-dark ${ (arrowBehavior.checked && arrowBehavior.name === 'assist_church') && 'rotate-180' }` } fontSize='medium' /> 
-                     </div>
-                     <div className="flex flex-col pb-6">
-                        <label className="section-label-radio">
-                           <input
-                              type="radio"
-                              name='assistChurch'
-                              value={ true }
-                              onChange={ handleChange }
-                              className="section-input-radio"
-                           />Sí, 17 h estoy en la iglesia. 💒
-                        </label>
-                        <label className="section-label-radio">
-                           <input
-                              type="radio"
-                              name='assistChurch'
-                              value={ false }
-                              onChange={ handleChange }
-                              className="section-input-radio"
-                           />No, 19 h estoy en el salón. 🙌🏼
-                        </label>
-                     </div>
-                  </span>
-               </label>
 
                {/* Food section ---------------------- */}
                <label>

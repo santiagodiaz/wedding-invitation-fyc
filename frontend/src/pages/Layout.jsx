@@ -75,10 +75,10 @@ const Layout = () => {
                   />
                   <InfoSection
                      header={"Ceremonia + Fiesta | 18:00hs"}
-                     subtitle={"Finca AMproS"}
+                     subtitle={"Estación Fátima Eventos"}
                      lineColorCode={"border-green"}
                   >
-                     C. Pescara, Cruz de Piedra, Maipú, Mendoza
+                     Isla Jorge 290, Fátima, Buenos Aires
                   </InfoSection>
                   <Button
                      buttonText={"¿Cómo llego?"}
