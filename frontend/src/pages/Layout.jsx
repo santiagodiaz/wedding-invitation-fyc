@@ -257,10 +257,7 @@ const Layout = () => {
          </section>
 
          {/* 5° Carousel section --------------------------------------- */}
-         <section className="relative flex justify-center items-end bg-cream w-full z-20
-            sm:hidden">
-            <Carousel />
-         </section>
+
 
 
       </div>
