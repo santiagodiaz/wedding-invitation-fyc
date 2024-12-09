@@ -138,7 +138,7 @@ const Layout = () => {
                      <Button
                         buttonText={'Mirá el clima'}
                         colorCode={'bg-mustard'}
-                        action={'openWeatherModal'}
+                        action={'openInfoModal'}
                      />
                   </div>
                </SectionContainerElement>

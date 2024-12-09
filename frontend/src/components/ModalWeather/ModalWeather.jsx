@@ -11,7 +11,7 @@ const ModalWeather = () => {
    const { setWeatherModal } = useContext(ModalContext);
 
    const handleWeather = () => {
-      axios.get(`https://api.weatherapi.com/v1/current.json?q=Mendoza&lang=es&key=${import.meta.env.VITE_REACT_APP_WEATHER_API_KEY}`)
+      axios.get(`https://api.weatherapi.com/v1/current.json?q=Mendoza&lang=es`)
          .then((response) => {
             console.log('Response:', response.data);
             setLocalWeather(response.data)
