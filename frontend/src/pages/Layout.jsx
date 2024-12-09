@@ -67,27 +67,6 @@ const Layout = () => {
 
             {/* Church and party container ---------- */}
             <SectionContainer>
-
-               {/* Church section ---------- */}
-               <SectionContainerElement>
-                  <ImageComponent
-                     src={"/assets/images/church-icon.png"}
-                     alt={"church icon"}
-                  />
-                  <InfoSection
-                     header={"Ceremonia | 17:00 pm"}
-                     subtitle={"Nuestra Señora del Perpetuo Socorro"}
-                     lineColorCode={"border-green"}
-                  >
-                     Mazzolari 1 | Chacras de Coria, Mendoza
-                  </InfoSection>
-                  <Button
-                     buttonText={"¿Cómo llego?"}
-                     colorCode={"bg-green"}
-                     url={'church'}
-                  />
-               </SectionContainerElement>
-
                {/* Party section ---------- */}
                <SectionContainerElement>
                   <ImageComponent
@@ -95,7 +74,7 @@ const Layout = () => {
                      alt={"Icono música"}
                   />
                   <InfoSection
-                     header={"Fiesta | 19:00 pm"}
+                     header={"Ceremonia + Fiesta | 18:00hs"}
                      subtitle={"Finca AMproS"}
                      lineColorCode={"border-green"}
                   >

@@ -122,7 +122,7 @@ const handlePartnerNameChange = ( index, value ) => {
       console.log(formData);
 
       axios
-      .post('https://wedding-invitation-backend.vercel.app/api/guests', formData)
+      .post('https://wedding-invitations.onrender.com/guests', formData)
       .then((response) => {
          console.log('Response:', response.data);
          if (formData.assist !== "false") {
