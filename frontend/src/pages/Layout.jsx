@@ -1,6 +1,6 @@
 import Arrows from "../components/Arrows/Arrows"
 import Button from "../components/Button/Button"
-import ButtonGift from "../components/ButtonGift/ButtonGift"
+//import ButtonGift from "../components/ButtonGift/ButtonGift"
 import Carousel from "../components/Carousel/Carousel"
 import Countdown from "../components/Countdown/Countdown"
 import CurvedBottomSection from "../components/CurvedBottomSection/CurvedBottomSection"
@@ -29,7 +29,7 @@ const Layout = () => {
          ${confirmationModal || weatherModal || modal ? ' h-screen' : 'h-min-screen'} `
       }>
 
-         <ButtonGift />
+         {/* <ButtonGift /> --------------------------------------- */}
 
          {/* Modals --------------------------------------- */}
          <ModalContainer isOpen={ modal }>
@@ -251,9 +251,7 @@ const Layout = () => {
 
             </SectionContainer>
 
-            <section className="hidden lg:flex lg:w-full lg:justify-center">
-               <Carousel />
-            </section>
+
 
 
          </section>
