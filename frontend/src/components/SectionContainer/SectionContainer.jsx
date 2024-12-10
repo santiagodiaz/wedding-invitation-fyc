@@ -6,11 +6,6 @@ const SectionContainer = ( { children } ) => {
          <br></br>
 <br></br>
 <br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
       </div>
       
    )
