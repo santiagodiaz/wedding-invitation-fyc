@@ -470,7 +470,14 @@ const handlePartnerNameChange = ( index, value ) => {
                         { isLoading ? 'Enviando...' : 'Enviar' }
                      </button>
                   }
-
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
                </div>
 
             </form>
