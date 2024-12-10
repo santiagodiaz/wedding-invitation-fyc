@@ -46,15 +46,15 @@ const Layout = () => {
 
 
          {/* 1° Portrait Section --------------------------------------- */}
-         <section className="relative flex flex-col items-center w-full h-[100vh] text-sm bg-cream pt-8 px-8 overflow-hidden z-20">
+         <section className="relative flex flex-col items-center w-full h-[100vh] text-sm bg-white pt-8 px-8 overflow-hidden z-20">
             <Portrait />
             <MainHeadline />
             <Arrows />
-            <CurvedTopSection bgColor={"bg-mustard"} />
+            <CurvedTopSection bgColor={"bg-white"} />
          </section>
 
          {/* 2° Countdown, maps and schelude section --------------------------------------- */}
-         <section className="relative flex flex-col items-center justify-center w-full bg-mustard h-fit px-8 pb-4 z-30
+         <section className="relative flex flex-col items-center justify-center w-full bg-white h-fit px-8 pb-4 z-30
             lg:px-8 lg:pb-20">
 
             <Countdown />
@@ -76,6 +76,7 @@ const Layout = () => {
                      header={"Ceremonia + Fiesta | 18:00hs"}
                      subtitle={"Estación Fátima Eventos"}
                      lineColorCode={"border-green"}
+                     textColorCode={"text-black"}
                   >
                      Isla Jorge 290, Fátima, Buenos Aires
                   </InfoSection>
@@ -113,9 +114,9 @@ const Layout = () => {
          </section>
 
          {/* 3° Music & clothes section --------------------------------------- */}
-         <section className="relative flex flex-col items-center w-full h-fit text-sm bg-green px-8 pt-20 pb-32 z-20
+         <section className="relative flex flex-col items-center w-full h-fit text-sm bg-gray-dark px-8 pt-20 pb-32 z-20
             lg:pb-40">
-            <CurvedBottomSection bgColor={"bg-mustard"} />
+            <CurvedBottomSection bgColor={"bg-white"} />
 
             {/* Dress and music container ---------- */}
             <SectionContainer>
@@ -131,12 +132,12 @@ const Layout = () => {
                      <InfoSection
                         header={'¿Qué me pongo?'}
                         subtitle={'Dresscode: Vos metele facha y comodidad porque, oxidados o no, vamos a bailar.'}
-                        lineColorCode={'border-mustard'}
+                        lineColorCode={'border-green'}
                      >
                      </InfoSection>
                      <Button
                         buttonText={'Mirá el clima'}
-                        colorCode={'bg-mustard'}
+                        colorCode={'bg-green'}
                         action={'openInfoModal'}
                      />
                   </div>
@@ -150,14 +151,14 @@ const Layout = () => {
                   />
                   <InfoSection
                      header={"#ModoDJ"}
-                     lineColorCode={'border-mustard'}
+                     lineColorCode={'border-green'}
                   >
                      Ayudanos a armar la lista y no dejar afuera ningún tema de esos que te hacen darlo todo.
                   </InfoSection>
                   <Button
                      buttonText={"Añadir tu tema"}
                      widthClass={"w-64"}
-                     colorCode={"bg-mustard"}
+                     colorCode={"bg-green"}
                      url={'spotify'}
                   />
                </SectionContainerElement>
@@ -171,7 +172,7 @@ const Layout = () => {
                   />
                   <InfoSection
                      header={'¿Hay equipo?'}
-                     lineColorCode={'border-mustard'}
+                     lineColorCode={'border-green'}
                   >
                      Esperamos que puedas acompañarnos.
                      PD: Si no confirmás nos dolerá
@@ -181,18 +182,18 @@ const Layout = () => {
                   <Button
                      buttonText={'Confirmar asistencia'}
                      
-                     colorCode={'bg-mustard'}
+                     colorCode={'bg-white'}
                      action={'openConfirmationModal'}
                   />
                </SectionContainerElement>
 
             </SectionContainer>
 
-            <CurvedTopSection bgColor={"bg-cream"} />
+            <CurvedTopSection bgColor={"bg-white"} />
          </section>
 
          {/* 4° Confirmation section --------------------------------------- */}
-         <section className="relative flex flex-col items-center h-fit w-full text-sm bg-cream px-8 z-20
+         <section className="relative flex flex-col items-center h-fit w-full text-sm bg-white px-8 z-20
             sm:pb-24 md:pb-0 md:px-0">
 
             {/* Confirmation and present container ---------- */}
@@ -207,7 +208,7 @@ const Layout = () => {
                   />
                   <InfoSection
                      header={'¿Hay equipo?'}
-                     lineColorCode={'border-mustard'}
+                     lineColorCode={'border-green'}
                      textColorCode={'text-gray-dark'}
                   >
                      Esperamos que puedas acompañarnos.
@@ -231,7 +232,7 @@ const Layout = () => {
                   />
                   <InfoSection
                      header={"¿Qué les regalo?"}
-                     lineColorCode={"border-mustard"}
+                     lineColorCode={"border-green"}
                      textColorCode={"text-gray-dark"}
                   >
                      ¿El mejor regalo? tu presencia,
