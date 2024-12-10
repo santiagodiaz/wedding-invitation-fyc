@@ -49,7 +49,6 @@ const Layout = () => {
          <section className="relative flex flex-col items-center w-full h-[100vh] text-sm bg-white pt-8 px-8 overflow-hidden z-20">
             <Portrait />
             <MainHeadline />
-            <Arrows />
             <CurvedTopSection bgColor={"bg-white"} />
          </section>
 
