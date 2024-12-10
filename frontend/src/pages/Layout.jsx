@@ -9,7 +9,7 @@ import ImageComponent from "../components/ImageComponent/ImageComponent"
 import InfoSection from "../components/InfoSection/InfoSection"
 import MainHeadline from "../components/MainHeadline/MainHeadline"
 import Portrait from "../components/Portrait/Portrait"
-import Spinner from "../components/Spinner/Spinner"
+//import Spinner from "../components/Spinner/Spinner"
 import { useContext } from "react"
 import { ModalContext } from "../context/ModalContext"
 import ModalContainer from "../components/ModalContainer/ModalContainer"
@@ -47,7 +47,6 @@ const Layout = () => {
 
          {/* 1° Portrait Section --------------------------------------- */}
          <section className="relative flex flex-col items-center w-full h-[100vh] text-sm bg-cream pt-8 px-8 overflow-hidden z-20">
-            <Spinner />
             <Portrait />
             <MainHeadline />
             <Arrows />
