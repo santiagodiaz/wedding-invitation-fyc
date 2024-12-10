@@ -60,7 +60,7 @@ const Layout = () => {
             <Countdown />
             <Button
                buttonText={ 'Agendar' }
-               colorCode={"bg-green"}
+               colorCode={"bg-sky"}
                url={'calendar'}
             />
 
@@ -82,7 +82,7 @@ const Layout = () => {
                   </InfoSection>
                   <Button
                      buttonText={"¿Cómo llego?"}
-                     colorCode={"bg-green"}
+                     colorCode={"bg-sky"}
                      url={'salon'}
                   />
                </SectionContainerElement>
@@ -137,7 +137,7 @@ const Layout = () => {
                      </InfoSection>
                      <Button
                         buttonText={'Mirá el clima'}
-                        colorCode={'bg-green'}
+                        colorCode={'bg-sky'}
                         action={'openInfoModal'}
                      />
                   </div>
@@ -158,7 +158,7 @@ const Layout = () => {
                   <Button
                      buttonText={"Añadir tu tema"}
                      widthClass={"w-64"}
-                     colorCode={"bg-green"}
+                     colorCode={"bg-sky"}
                      url={'spotify'}
                   />
                </SectionContainerElement>
@@ -219,7 +219,7 @@ const Layout = () => {
                   <Button
                      buttonText={ sent ? 'Formulario enviado' : 'Confirmar asistencia' }
                      disabled={ sent }
-                     colorCode={'bg-green'}
+                     colorCode={'bg-sky'}
                      action={'openConfirmationModal'}
                   />
                </SectionContainerElement>
@@ -243,7 +243,7 @@ const Layout = () => {
                   <Button
                      buttonText={'Ver información'}
                      
-                     colorCode={'bg-green'}
+                     colorCode={'bg-sky'}
                      url={false}
                      action={'openInfoModal'}
                   />

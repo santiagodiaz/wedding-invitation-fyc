@@ -18,7 +18,8 @@ export default {
       mustard: '#C49F5F',
       red: '#C44848',
       white: '#FFF',
-      black: '#000000'
+      black: '#000000',
+      sky: '#075985'
     }
     // extend: {},
   },
