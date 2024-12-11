@@ -232,7 +232,7 @@ const Layout = () => {
                   >
                      ¿El mejor regalo? tu presencia,
                      pero si querés ayudarnos con
-                     nuestro viaje, hacé click en el botón.
+                     nuestro viaje hacé click en el botón.
 
                   </InfoSection>
                   <Button
