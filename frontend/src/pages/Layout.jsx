@@ -130,15 +130,11 @@ const Layout = () => {
                   <div className="flex flex-col items-center">
                      <InfoSection
                         header={'¿Qué me pongo?'}
-                        subtitle={'Dresscode: Vos metele facha y comodidad porque, oxidados o no, vamos a bailar.'}
+                        subtitle={'Dresscode: Cocktail'}
                         lineColorCode={'border-green'}
                      >
+                        Vos metele comodidad porque, oxidados o no, vamos a bailar.
                      </InfoSection>
-                     <Button
-                        buttonText={'Mirá el clima'}
-                        colorCode={'bg-sky'}
-                        action={'openInfoModal'}
-                     />
                   </div>
                </SectionContainerElement>
 
@@ -170,7 +166,7 @@ const Layout = () => {
                      margin={"disabled"}
                   />
                   <InfoSection
-                     header={'¿Hay equipo?'}
+                     header={'¿Venís?'}
                      lineColorCode={'border-green'}
                   >
                      Esperamos que puedas acompañarnos.
@@ -206,7 +202,7 @@ const Layout = () => {
                      margin={"disabled"}
                   />
                   <InfoSection
-                     header={'¿Hay equipo?'}
+                     header={'¿Venís?'}
                      lineColorCode={'border-green'}
                      textColorCode={'text-gray-dark'}
                   >
