@@ -96,7 +96,7 @@ const handlePartnerNameChange = ( index, value ) => {
                text: text,
                background: '#EAE8E4',
                customClass: {
-                  confirmButton: 'btn-alert bg-green hover:bg-green-dark'
+                  confirmButton: 'btn-alert bg-sky hover:bg-green-dark'
                },
                buttonsStyling: false
             }).then((result) => {
@@ -106,7 +106,7 @@ const handlePartnerNameChange = ( index, value ) => {
                   text: confirmedText,
                   background: '#EAE8E4',
                   customClass: {
-                     confirmButton: 'btn-alert bg-green hover:bg-green-dark'
+                     confirmButton: 'btn-alert bg-sky hover:bg-green-dark'
                   },
                   buttonsStyling: false
                }).then((result) => {
@@ -127,15 +127,15 @@ const handlePartnerNameChange = ( index, value ) => {
          console.log('Response:', response.data);
          if (formData.assist !== "false") {
             showConfirmation(
-               '¡Es un si! 💜', 
+               '¡Nos vemos allá!', 
                'Te esperamos para compartir y darlo todo con nosotros.', 
                'Formulario enviado con éxito!'
             );
             setSent(true);
          } else {
             showConfirmation(
-               '¡Te vamos a extrañar!', 
-               'pero creemos que la energía lo atraviesa todo así que igualmente ahí estarás con nosotros ✨.', 
+               '¡Te vamos a extrañar!',
+               'estarás presente en nuestros corazones de todas formas ✨.',
                'Formulario enviado con éxito!'
             );
             setSent(true);
@@ -144,7 +144,7 @@ const handlePartnerNameChange = ( index, value ) => {
       .catch((error) => {
          console.error('Error:', error);
          showConfirmation(
-            'Ups!', 
+            'Uh', 
             'Algo salió mal.', 
             'El formulario no se ha enviado'
             );
@@ -168,7 +168,7 @@ const handlePartnerNameChange = ( index, value ) => {
          <div className="relative py-3 w-10/12 mx-auto text-center">
 
             <section className="flex flex-col mb-6">
-               <span className="text-2xl font-medium mb-4">¿Hay equipo?</span>
+               <span className="text-2xl font-medium mb-4">¿Venís?</span>
                <span className="text-base font-light ">Hay que enviar un solo formulario por pareja, grupo familiar o individual, si te llegó a vos es porque es tu función 😉 
                   <br></br> ¡Esperamos que nos acompañes!
                </span>
@@ -197,35 +197,6 @@ const handlePartnerNameChange = ( index, value ) => {
                               name="fullName"
                               placeholder="Ingresá tu nombre y apellido"
                               value={ formData.fullName }
-                              onChange={ handleChange }
-                              className="section-input-text"
-                           />
-                        </label>
-                     </div>
-                  </span>
-               </label>
-
-               {/* Phone section ---------------------- */}
-               <label>
-                  <input className="peer/showLabel absolute scale-0 unselectable" type="checkbox" name='fullname' />
-                  <div className="section-line"></div>
-                  <span className="block bg-white max-h-14 overflow-hidden rounded-b-lg px-4 py-0 shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-96">
-                     <div className="section-header">
-                        <h3>
-                           Teléfono
-                           <span className='section-required'>*</span>
-                        </h3>
-                        <KeyboardArrowDownIcon className={ `text-gray-dark ${ (arrowBehavior.checked && arrowBehavior.name === 'fullname') && 'rotate-180' }` } fontSize='medium' /> 
-                     </div>
-                     <h3 className="text-sm font-medium mb-4">Dejanos un número de teléfono para poder contactarte por cualquier cosa.</h3>
-                     <div className="flex flex-col pb-6 gap-2">
-                        <label>
-                           <input
-                              required
-                              type="text"
-                              name="phone"
-                              placeholder="Ingresá tu teléfono"
-                              value={ formData.phone }
                               onChange={ handleChange }
                               className="section-input-text"
                            />
@@ -282,7 +253,7 @@ const handlePartnerNameChange = ( index, value ) => {
                         </h3>
                         <KeyboardArrowDownIcon className={ `text-gray-dark ${ (arrowBehavior.checked && arrowBehavior.name === 'partners_name') && 'rotate-180' }` } fontSize='medium' /> 
                      </div>
-                     <h3 className="text-sm font-medium mb-4">¿Fuiste invitado con alguien? Necesitamos su nombre y apellido para la lista. (Los niños van aparte).</h3>
+                     <h3 className="text-sm font-medium mb-4">¿Fuiste invitado con alguien? Necesitamos su nombre y apellido para la lista.</h3>
                      <div className="section-label-text">
                         <div className='flex gap-4'>
                            <label htmlFor="partnerConfirm" className='flex gap-2 cursor-pointer'>Si
@@ -325,56 +296,6 @@ const handlePartnerNameChange = ( index, value ) => {
                               Agregar acompañante
                            </button>
                         </div>
-                     </div>
-                  </span>
-               </label>
-
-               {/* Childrens section ---------------------- */}
-               <label>
-                  <input className="peer/showLabel absolute scale-0 unselectable" type="checkbox" name='partners_name' />
-                  <div className="section-line"></div>
-                  <span className="block bg-white max-h-14 overflow-hidden rounded-b-lg  px-4 py-0  shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-72">
-                     <div className="section-header">
-                        <h3>
-                           Niños
-                        </h3>
-                        <KeyboardArrowDownIcon className={ `text-gray-dark ${ (arrowBehavior.checked && arrowBehavior.name === 'partners_name') && 'rotate-180' }` } fontSize='medium' /> 
-                     </div>
-                     <h3 className="text-sm font-medium mb-4">¿Venís con niños que sean mayores a 4 años? Necesitamos agregarlos a la lista.</h3>
-                     <div className="section-label-text">
-                        <div className='flex gap-4'>
-                           <label htmlFor="childrensConfirm" className='flex gap-2 cursor-pointer'>Si
-                              <input 
-                              type="radio" 
-                              name="childrens" 
-                              id="childrensConfirm" 
-                              value={ true } 
-                              onClick={ handleChange } 
-                              className='section-input-radio'
-                              />
-                           </label>
-                           <label htmlFor="childrensNotConfirm" className='flex gap-2 cursor-pointer'>No
-                              <input 
-                              type="radio" 
-                              name="childrens" 
-                              id="childrensNotConfirm" 
-                              value={ false } 
-                              onClick={ handleChange }
-                              className='section-input-radio'
-                              />
-                           </label>
-                        </div>
-                        <label className='flex flex-col mt-2'>
-                           <input
-                              type="number"
-                              name="childrensQuantity"
-                              placeholder="Ingresá cantidad de niños"
-                              value={ formData.childrensQuantity }
-                              onChange={ handleChange }
-                              className={ `section-input-text ${ formData.childrens !== 'false' ? 'visible section-input-text' : 'hidden'}` }
-                              disabled={ optionalInput }
-                           />
-                        </label>
                      </div>
                   </span>
                </label>
@@ -430,34 +351,6 @@ const handlePartnerNameChange = ( index, value ) => {
                   </span>
                </label>
 
-
-               {/* Message section ---------------------- */}
-               <label>
-                  <input className="peer/showLabel absolute scale-0 unselectable" type="checkbox" name='message' />
-                  <div className="section-line"></div>
-                  <span className="block bg-white max-h-14 overflow-hidden rounded-b-lg px-4 py-0 shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-64">
-                     <div className="section-header">
-                        <h3>
-                           Mensaje para los novios
-                        </h3>
-                        <KeyboardArrowDownIcon className={ `text-gray-dark ${ (arrowBehavior.checked && arrowBehavior.name === 'message') && 'rotate-180' }` } fontSize='medium' /> 
-                     </div>
-                     <h3 className="text-sm font-medium mb-4">¿Querés decirnos algo? Consulta, declaraciones de amor, lo que sea, este es el espacio.</h3>
-                     <div className="section-label-text">
-                        <label>
-                           <input
-                              type="text"
-                              name="message"
-                              placeholder="Te leemos"
-                              value={ formData.message }
-                              onChange={ handleChange }
-                              className='section-input-text'
-                           />
-                        </label>
-                     </div>
-                  </span>
-               </label>
-
                <div className="flex justify-between items-baseline">
                   {
                      sent ?
@@ -466,7 +359,7 @@ const handlePartnerNameChange = ( index, value ) => {
                         onClick={ handleSubmit }
                         type="submit"
                         disabled={ isLoading }
-                        className="mt-4 bg-green text-white py-2 px-6 transition-all duration-200 rounded-md hover:bg-green-dark active:scale-95">
+                        className="mt-4 bg-sky text-white py-2 px-6 transition-all duration-200 rounded-md hover:bg-green-dark active:scale-95">
                         { isLoading ? 'Enviando...' : 'Enviar' }
                      </button>
                   }

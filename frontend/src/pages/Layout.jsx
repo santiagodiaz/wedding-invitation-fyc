@@ -101,7 +101,7 @@ const Layout = () => {
                   </InfoSection>
                   <Button
                      buttonText={'Ver información'}
-                     colorCode={'bg-green'}
+                     colorCode={'bg-sky'}
                      url={false}
                      action={'openInfoModal'}
                   />
