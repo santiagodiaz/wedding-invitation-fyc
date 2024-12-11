@@ -128,7 +128,7 @@ const handlePartnerNameChange = ( index, value ) => {
          if (formData.assist !== "false") {
             showConfirmation(
                '¡Nos vemos allá!', 
-               'Te esperamos para compartir y darlo todo con nosotros.', 
+               'Te esperamos para compartir y festejar con nosotros.', 
                'Formulario enviado con éxito!'
             );
             setSent(true);
@@ -145,7 +145,7 @@ const handlePartnerNameChange = ( index, value ) => {
          console.error('Error:', error);
          showConfirmation(
             'Uh', 
-            'Algo salió mal.', 
+            'Algo salió mal. Intentá de nuevo o avisanos.', 
             'El formulario no se ha enviado'
             );
       });
@@ -169,7 +169,7 @@ const handlePartnerNameChange = ( index, value ) => {
 
             <section className="flex flex-col mb-6">
                <span className="text-2xl font-medium mb-4">¿Venís?</span>
-               <span className="text-base font-light ">Hay que enviar un solo formulario por pareja, grupo familiar o individual, si te llegó a vos es porque es tu función 😉 
+               <span className="text-base font-light ">Hay que enviar un solo formulario por pareja, grupo familiar o individual.
                   <br></br> ¡Esperamos que nos acompañes!
                </span>
                <span className="text-sm font-light italic mt-2">( Los campos con <span className='text-red'>*</span> son obligatorios )</span>
@@ -226,7 +226,7 @@ const handlePartnerNameChange = ( index, value ) => {
                               value={true}
                               onChange={handleChange}
                               className="section-input-radio"
-                           />YENDO 🚀
+                           />YENDO
                         </label>
                         <label className="section-label-radio">
                            <input
@@ -235,7 +235,7 @@ const handlePartnerNameChange = ( index, value ) => {
                               value={false}
                               onChange={handleChange}
                               className="section-input-radio"
-                           />NO VOY A PODER ASISTIR 😔
+                           />NO VOY A PODER ASISTIR
                         </label>
                      </div>
                   </span>

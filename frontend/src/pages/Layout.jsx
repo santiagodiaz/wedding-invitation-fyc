@@ -231,8 +231,8 @@ const Layout = () => {
                      textColorCode={"text-gray-dark"}
                   >
                      ¿El mejor regalo? tu presencia,
-                     pero si querés ayudarnos a cumplir
-                     un sueño hacé click en el botón.
+                     pero si querés ayudarnos con
+                     nuestro viaje, hacé click en el botón.
 
                   </InfoSection>
                   <Button
