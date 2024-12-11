@@ -8,7 +8,7 @@ export default {
     colors: {
       cream: '#EAE8E4',
       gray:{
-        dark: '#404040',
+        dark: '#000028',
         light: '#E3E0D9',
       } ,
       green: {
