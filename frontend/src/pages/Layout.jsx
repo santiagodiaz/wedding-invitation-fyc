@@ -73,11 +73,11 @@ const Layout = () => {
                   />
                   <InfoSection
                      header={"Ceremonia + Fiesta | 18:00hs"}
-                     subtitle={"Estación Fátima Eventos"}
+                     subtitle={"Estación Fátima"}
                      lineColorCode={"border-green"}
                      textColorCode={"text-black"}
                   >
-                     Isla Jorge 290, Fátima, Buenos Aires
+                     Isla Jorge 290, Pilar
                   </InfoSection>
                   <Button
                      buttonText={"¿Cómo llego?"}
