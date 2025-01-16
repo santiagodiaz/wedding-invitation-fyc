@@ -46,20 +46,20 @@ const Layout = () => {
 
 
          {/* 1° Portrait Section --------------------------------------- */}
-         <section className="relative flex flex-col items-center w-full h-[100vh] text-sm bg-white pt-8 px-8 overflow-hidden z-20">
+         <section className="relative flex flex-col items-center w-full h-[100vh] text-sm bg-cream pt-8 px-8 overflow-hidden z-20">
             <Portrait />
             <MainHeadline />
-            <CurvedTopSection bgColor={"bg-white"} />
+            <CurvedTopSection bgColor={"bg-cream"} />
          </section>
 
          {/* 2° Countdown, maps and schelude section --------------------------------------- */}
-         <section className="relative flex flex-col items-center justify-center w-full bg-white h-fit px-8 pb-4 z-30
+         <section className="relative flex flex-col items-center justify-center w-full bg-cream h-fit px-8 pb-4 z-30
             lg:px-8 lg:pb-20">
 
             <Countdown />
             <Button
                buttonText={ 'Agendar' }
-               colorCode={"bg-sky"}
+               colorCode={"bg-mustard"}
                url={'calendar'}
             />
 
@@ -81,7 +81,7 @@ const Layout = () => {
                   </InfoSection>
                   <Button
                      buttonText={"¿Cómo llego?"}
-                     colorCode={"bg-sky"}
+                     colorCode={"bg-mustard"}
                      url={'salon'}
                   />
                </SectionContainerElement>
@@ -101,7 +101,7 @@ const Layout = () => {
                   </InfoSection>
                   <Button
                      buttonText={'Ver información'}
-                     colorCode={'bg-sky'}
+                     colorCode={'bg-mustard'}
                      url={false}
                      action={'openInfoModal'}
                   />
@@ -113,9 +113,9 @@ const Layout = () => {
          </section>
 
          {/* 3° Music & clothes section --------------------------------------- */}
-         <section className="relative flex flex-col items-center w-full h-fit text-sm bg-gray-dark px-8 pt-20 pb-32 z-20
+         <section className="relative flex flex-col items-center w-full h-fit text-sm bg-green px-8 pt-20 pb-32 z-20
             lg:pb-40">
-            <CurvedBottomSection bgColor={"bg-white"} />
+            <CurvedBottomSection bgColor={"bg-cream"} />
 
             {/* Dress and music container ---------- */}
             <SectionContainer>
@@ -153,7 +153,7 @@ const Layout = () => {
                   <Button
                      buttonText={"Añadir tu tema"}
                      widthClass={"w-64"}
-                     colorCode={"bg-sky"}
+                     colorCode={"bg-mustard"}
                      url={'spotify'}
                   />
                </SectionContainerElement>
@@ -177,18 +177,18 @@ const Layout = () => {
                   <Button
                      buttonText={'Confirmar asistencia'}
                      
-                     colorCode={'bg-white'}
+                     colorCode={'bg-cream'}
                      action={'openConfirmationModal'}
                   />
                </SectionContainerElement>
 
             </SectionContainer>
 
-            <CurvedTopSection bgColor={"bg-white"} />
+            <CurvedTopSection bgColor={"bg-cream"} />
          </section>
 
          {/* 4° Confirmation section --------------------------------------- */}
-         <section className="relative flex flex-col items-center h-fit w-full text-sm bg-white px-8 z-20
+         <section className="relative flex flex-col items-center h-fit w-full text-sm bg-cream px-8 z-20
             sm:pb-24 md:pb-0 md:px-0">
 
             {/* Confirmation and present container ---------- */}
@@ -214,7 +214,7 @@ const Layout = () => {
                   <Button
                      buttonText={ sent ? 'Formulario enviado' : 'Confirmar asistencia' }
                      disabled={ sent }
-                     colorCode={'bg-sky'}
+                     colorCode={'bg-mustard'}
                      action={'openConfirmationModal'}
                   />
                </SectionContainerElement>
@@ -238,7 +238,7 @@ const Layout = () => {
                   <Button
                      buttonText={'Ver información'}
                      
-                     colorCode={'bg-sky'}
+                     colorCode={'bg-mustard'}
                      url={false}
                      action={'openInfoModal'}
                   />

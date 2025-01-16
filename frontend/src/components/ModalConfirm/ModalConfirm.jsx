@@ -96,7 +96,7 @@ const handlePartnerNameChange = ( index, value ) => {
                text: text,
                background: '#EAE8E4',
                customClass: {
-                  confirmButton: 'btn-alert bg-sky hover:bg-green-dark'
+                  confirmButton: 'btn-alert bg-green hover:bg-green-dark'
                },
                buttonsStyling: false
             }).then((result) => {
@@ -106,7 +106,7 @@ const handlePartnerNameChange = ( index, value ) => {
                   text: confirmedText,
                   background: '#EAE8E4',
                   customClass: {
-                     confirmButton: 'btn-alert bg-sky hover:bg-green-dark'
+                     confirmButton: 'btn-alert bg-green hover:bg-green-dark'
                   },
                   buttonsStyling: false
                }).then((result) => {
@@ -359,7 +359,7 @@ const handlePartnerNameChange = ( index, value ) => {
                         onClick={ handleSubmit }
                         type="submit"
                         disabled={ isLoading }
-                        className="mt-4 bg-sky text-white py-2 px-6 transition-all duration-200 rounded-md hover:bg-green-dark active:scale-95">
+                        className="mt-4 bg-green text-white py-2 px-6 transition-all duration-200 rounded-md hover:bg-green-dark active:scale-95">
                         { isLoading ? 'Enviando...' : 'Enviar' }
                      </button>
                   }
