@@ -22,13 +22,13 @@ const ModalAccounts = () => {
          lg:w-[720px]">
 
          <header className="relative flex flex-col items-center justify-start gap-2 w-full rounded-t-md
-            bg-gray-dark bg-no-repeat bg-cover bg-bottom ">
+            bg-green bg-no-repeat bg-cover bg-bottom ">
             <div className="h-[150px] md:h-[150px] lg:h-[150px] flex pt-[4vh]">
                <h2 className="text-2xl font-semibold text-center text-white z-50
                   lg:text-3xl">
                   ¿No sabés qué <br className="md:hidden"></br> regalarnos?
                </h2>
-            </div> 
+            </div>
             <img 
                onClick={ () => setModal( false ) }
                src="./assets/images/btn-close.png" 
@@ -49,22 +49,22 @@ const ModalAccounts = () => {
             lg:w-[450px]">
                <section className="flex items-center gap-2">
                   <img src="./assets/images/green-arrows-icon.png" alt="" className='h-6'/>
-                  <h2 className='font-semibold text-base'>BANCO GALICIA</h2>
+                  <h2 className='font-semibold text-base'>BANCO MACRO</h2>
                </section>
                <div className="flex flex-col gap-1.5">
                   <div className='flex-wrap'>
                      <span className='italic'>Titular :</span>
-                     <span className='font-semibold'> Julieta Salas</span>
+                     <span className='font-semibold'> Fausto Martín Díaz</span>
                   </div>
                   <div className='flex items-center gap-2 flex-wrap'>
                      <span className='italic'>Alias :</span>
                         <div className='flex items-center gap-2'>
-                           <span className='font-semibold'> JULIETA.PAMELA.SALAS</span>
+                           <span className='font-semibold'> DIAZ.FAUSTO.MARTIN</span>
                         </div>
                         <button
                            className="group relative inline-flex " >
                            <img 
-                              onClick={ () => copyToClipboard('JULIETA.PAMELA.SALAS') } 
+                              onClick={ () => copyToClipboard('DIAZ.FAUSTO.MARTIN') } 
                               src="./assets/images/copy-icon.png" 
                               alt=" Boton copiar " 
                               title='Copiar' 
@@ -82,20 +82,16 @@ const ModalAccounts = () => {
                   </div>
                   <div className='flex-wrap'>
                      <span className='italic'>CUIL :</span>
-                     <span className='font-semibold'> 27387005108</span>
-                  </div>
-                  <div className='flex-wrap'>
-                     <span className='italic'>CTA :</span>
-                     <span className='font-semibold'> 4040441-1 038-4</span>
+                     <span className='font-semibold'> 20392698842</span>
                   </div>
                   <div className='flex items-center gap-2 flex-wrap'>
                      <span className='italic'>CBU :</span>
                      <div className='flex items-center gap-2'>
-                        <span className='font-semibold'> 0070038230004040441143</span>
+                        <span className='font-semibold'> 2850508440095245512678</span>
                         <button
                            className="group relative inline-flex " >
                            <img 
-                              onClick={ () => copyToClipboard('0070038230004040441143') } 
+                              onClick={ () => copyToClipboard('2850508440095245512678') } 
                               src="./assets/images/copy-icon.png" 
                               alt=" Boton copiar " 
                               title='Copiar' 

@@ -72,12 +72,12 @@ const Layout = () => {
                      alt={"Icono música"}
                   />
                   <InfoSection
-                     header={"Ceremonia + Fiesta | 18:00hs"}
-                     subtitle={"Estación Fátima"}
+                     header={"Ceremonia y Fiesta | 13:00hs"}
+                     subtitle={"Quinta Aventura"}
                      lineColorCode={"border-green"}
                      textColorCode={"text-black"}
                   >
-                     Isla Jorge 290, Pilar
+                     Crisólogo Larralde 1256, Moreno
                   </InfoSection>
                   <Button
                      buttonText={"¿Cómo llego?"}
@@ -96,7 +96,9 @@ const Layout = () => {
                      header={"¿Qué les regalo?"}
                      lineColorCode={"border-green"}
                   >
-                     ¿El mejor regalo? tu presencia, pero si querés cumplirnos un sueño hacé click.
+                     Lo mejor que podés darnos es tu compañía, pero si te copa darnos una mano,
+                     cualquier aporte para nuestro futuro juntos será más que bienvenido. 
+                     ¡Gracias!
 
                   </InfoSection>
                   <Button
@@ -130,10 +132,9 @@ const Layout = () => {
                   <div className="flex flex-col items-center">
                      <InfoSection
                         header={'¿Qué me pongo?'}
-                        subtitle={'Dresscode: Cocktail'}
+                        subtitle={'Dresscode: Elegante Sport'}
                         lineColorCode={'border-green'}
                      >
-                        Vos metele comodidad porque, oxidados o no, vamos a bailar.
                      </InfoSection>
                   </div>
                </SectionContainerElement>
@@ -145,10 +146,10 @@ const Layout = () => {
                      alt={"Icono baile"}
                   />
                   <InfoSection
-                     header={"#ModoDJ"}
+                     header={"¡Sumate como DJ!"}
                      lineColorCode={'border-green'}
                   >
-                     Ayudanos a armar la lista y no dejar afuera ningún tema de esos que te hacen darlo todo.
+                     Elegí tus temazos en nuestra lista y ayudanos a que la fiesta sea inolvidable.
                   </InfoSection>
                   <Button
                      buttonText={"Añadir tu tema"}
@@ -166,12 +167,10 @@ const Layout = () => {
                      margin={"disabled"}
                   />
                   <InfoSection
-                     header={'¿Venís?'}
+                     header={'¿Venís a la fiesta?'}
                      lineColorCode={'border-green'}
                   >
-                     Esperamos que puedas acompañarnos.
-                     PD: Si no confirmás nos dolerá
-                     el bolsillo (y el alma).
+                     Avisanos, así sabemos cuántos fernet preparar. ¡No nos dejes con la duda!
 
                   </InfoSection>
                   <Button
@@ -202,13 +201,11 @@ const Layout = () => {
                      margin={"disabled"}
                   />
                   <InfoSection
-                     header={'¿Venís?'}
+                     header={'¿Venís a la fiesta?'}
                      lineColorCode={'border-green'}
                      textColorCode={'text-gray-dark'}
                   >
-                     Esperamos que puedas acompañarnos.
-                     PD: Si no confirmás nos dolerá
-                     el bolsillo (y el alma).
+                     Avisanos, así sabemos cuántos fernet preparar. ¡No nos dejes con la duda!
 
                   </InfoSection>
                   <Button
@@ -230,9 +227,9 @@ const Layout = () => {
                      lineColorCode={"border-green"}
                      textColorCode={"text-gray-dark"}
                   >
-                     ¿El mejor regalo? tu presencia,
-                     pero si querés ayudarnos con
-                     nuestro viaje hacé click en el botón.
+                     Lo mejor que podés darnos es tu compañía, pero si te copa darnos una mano,
+                     cualquier aporte para nuestro futuro juntos será más que bienvenido. 
+                     ¡Gracias!
 
                   </InfoSection>
                   <Button

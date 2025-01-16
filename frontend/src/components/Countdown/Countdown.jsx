@@ -70,7 +70,7 @@ class FlipClock extends Component {
   }
 
   updateTime() {
-    const targetDate = new Date(2025, 2, 9, 12, 0, 0); // Month is zero-based (1 = February)
+    const targetDate = new Date(2025, 2, 9, 13, 0, 0); // Month is zero-based (1 = February)
     const currentDate = new Date();
 
     const difference = targetDate - currentDate;
