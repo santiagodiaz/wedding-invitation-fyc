@@ -135,6 +135,8 @@ const Layout = () => {
                         subtitle={'Dresscode: Elegante Sport'}
                         lineColorCode={'border-green'}
                      >
+                        El look es elegante sport. O sea, ni tan de gala ni tan tranqui,
+                        ¡algo intermedio para estar cómodos y bien vestidos para la ocasión!
                      </InfoSection>
                   </div>
                </SectionContainerElement>
